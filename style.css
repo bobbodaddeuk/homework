@@ -1,13 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Gaegu&display=swap');
 
 
-    
 
-body{
+
+body {
     background-color: black;
     font-family: 'Gaegu', sans-serif;
 }
-header{
+
+header {
     font-size: 80px;
     display: flex;
     justify-content: center;
@@ -17,7 +18,7 @@ header{
     top: 100px;
 }
 
-.search{
+.search {
     font-size: 20px;
     display: flex;
     justify-content: center;
@@ -28,22 +29,39 @@ header{
     height: 38px;
 
 }
-.image{
+
+.image {
     width: 200px;
     height: 150px;
     position: relative;
     bottom: 250px;
     border-radius: 5px;
 }
-.text{
+
+.text {
     position: relative;
     right: 30px;
     height: 30px;
     width: 250px;
 }
-.form{
+
+.form {
     display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: 300px;
+    grid-template-rows: 500px;
+    text-align: center;
+    gap: 10px;
+    left: 450px;
+}
+.card {
+    text-align: center;
+    background-color: white;
+    display: flex;
 }

@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Gaegu&display=swap');
+
+
+    
+
+body{
+    background-color: black;
+    font-family: 'Gaegu', sans-serif;
+}
+header{
+    font-size: 80px;
+    display: flex;
+    justify-content: center;
+    color: white;
+    padding-top: 150px;
+    position: relative;
+    top: 100px;
+}
+
+.search{
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    border-radius: 5px;
+    position: relative;
+    left: 130px;
+    bottom: 37px;
+    height: 38px;
+
+}
+.image{
+    width: 200px;
+    height: 150px;
+    position: relative;
+    bottom: 250px;
+    border-radius: 5px;
+}
+.text{
+    position: relative;
+    right: 30px;
+    height: 30px;
+    width: 250px;
+}
+.form{
+    display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+}

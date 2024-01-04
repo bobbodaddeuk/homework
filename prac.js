@@ -1,10 +1,9 @@
 function solution(n) {
-    let answer = 0;
-    for (i = 2; i <= n; i++) {
-        if (i % 2 === 0) {
-            answer += i;
-        }
+    var answer = 0;
+    for (i = 0; i<n.length; i++) {
+        answer += i;
     }
-    return answer
+    return answer;
 }
-console.log(solution(100));
+let a = solution(10)
+console.log(a)

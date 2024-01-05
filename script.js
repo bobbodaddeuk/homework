@@ -34,7 +34,10 @@ function card() {
 } 
 card()
 
-function movies(movie) {
-  fetch('https://api.themoviedb.org/3/movie/top_rated?language=en-US&page=1').then(function (response) { })
-
+function getId(id) {
+  alert("영화 id : " + id)
 }
+//해야될 것 
+//1. 검색 버튼 클릭 시 새로고침 되는 거
+//2. 카드 클릭 시에는 클릭한 영화 id 를 나타내는 alert 창을 띄웁니다.
+//3. 영화 검색 UI 구헌

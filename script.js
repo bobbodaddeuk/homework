@@ -20,10 +20,10 @@ function card() {
         let voteAverage = a['vote_average'];
         let temp_html = `
         <div class='card' onclick="getId(${id})">
-            <img src="https://image.tmdb.org/t/p/w500${posterPath}" alt="${title} Poster">
-            <h1>${title}</h1>
-            <p class = '줄거리'>${overView}</p>
-            <p class = '평점'>${voteAverage}</p>
+            <img class='movieImg' src="https://image.tmdb.org/t/p/w500${posterPath}" alt="${title} Poster">
+            <p class='movieName'> < <b>${title}</b> ></p>
+            <p class='movieSum'>${overView}</p>
+            <p class='voteAverage'>평점 : <b>${voteAverage}</b></p>
         </div>
         `;
         let element = document.getElementById('names-q1');
@@ -47,10 +47,6 @@ card()
     }
   }
 }
-
 function getId(id) {
-  alert("영화 id : " + id)
+  alert("이 영화의 id는 " + id + "입니다.")
 }
-//해야될 것
-//1. 검색 버튼 클릭 시 새로고침 되는 거
-//3. 영화 검색 UI 구헌

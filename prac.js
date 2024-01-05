@@ -1,11 +1,12 @@
-function solution(n) { //가장 작은 값 구하기
-    let answer = 0;
-    let arr = [];
-    for (let i = 3; i < n; i++) {
-        if (n % i === 1) {
-            arr.push(i);
+function filter() {
+    let value = document.getElementById("value").value.toUppercase();
+    let listInner = document.getElementsByClassName("listInner");
+    for (let i = 0; i < listInner.length; i++) {
+        title = listInner[i].getElementsByClassName('title');
+        if (title[0].innerHTML.toUppercase().indexOf(value) != -1) {
+            listInner[i].style.display = "flex";
+        } else {
+            listInner[i].style.display = "none";
         }
     }
-    return Math.min(...arr);
 }
-console.log(solution(12))

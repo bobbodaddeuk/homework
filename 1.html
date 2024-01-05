@@ -17,11 +17,7 @@
         <input class="search" type="submit" value="검색">
     </form>
     <section class="cards">
-        <div class='card' onclick="getId(${id})">
-            <img src="https://image.tmdb.org/t/p/w500${posterPath}" alt="${title} Poster">
-            <h1>${title}</h1>
-            <p class = 'overView'>${overView}</p>
-            <p class = 'voteAverage'>${voteAverage}</p>
+        <div class='card' id="names-q1" onclick="getId(${id})">
         </div>
     </section>
     <script src="script.js"></script>

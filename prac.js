@@ -1,9 +1,11 @@
-function solution(n) {
-    var answer = 0;
-    for (i = 0; i<n.length; i++) {
-        answer += i;
+function solution(n) { //가장 작은 값 구하기
+    let answer = 0;
+    let arr = [];
+    for (let i = 3; i < n; i++) {
+        if (n % i === 1) {
+            arr.push(i);
+        }
     }
-    return answer;
+    return Math.min(...arr);
 }
-let a = solution(10)
-console.log(a)
+console.log(solution(12))

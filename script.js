@@ -10,7 +10,7 @@ let url = 'https://api.themoviedb.org/3/movie/top_rated?language=en-US&page=1';
 function card() {
   fetch(url, options)
     .then(response => response.json())
-    .then(response  => {
+    .then(response => {
       let rows = response['results']
       rows.forEach(a => {
         let id = a['id'];
@@ -26,18 +26,31 @@ function card() {
             <p class = '평점'>${voteAverage}</p>
         </div>
         `;
-       let element = document.getElementById('names-q1');
-       element.innerHTML += temp_html;
-      }); 
+        let element = document.getElementById('names-q1');
+        element.innerHTML += temp_html;
+      });
     })
     .catch(err => console.error(err));
-} 
+}
 card()
+
+  function filter() {
+  let search = document.getElementById("search").value.toLowercase();
+  let listInner = document.getElementsByClassName("listInner");
+
+  for (let i = 0; i < listInner.length; i++) {
+    title = listInner[i].getElementsByClassName('title');
+    if (title[0].innerHTML.toLowercase().indexOf(search) !== -1) {
+      listInner[i].style.display = "flex"
+    } else {
+      listInner[i].style.display = "none"
+    }
+  }
+}
 
 function getId(id) {
   alert("영화 id : " + id)
 }
-//해야될 것 
+//해야될 것
 //1. 검색 버튼 클릭 시 새로고침 되는 거
-//2. 카드 클릭 시에는 클릭한 영화 id 를 나타내는 alert 창을 띄웁니다.
 //3. 영화 검색 UI 구헌

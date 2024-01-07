@@ -34,22 +34,26 @@ function card() {
 }
 card()
 
-  function filter() {
-  let search = document.getElementById("searchValue").Value.toLowerCase();
-  let movieName = document.getElementsByClassName("movieName");
 
-  for (let i = 0; i < movieName.length; i++) {
-    movieName = movieName[i].getElementsByClassName('movieName'); 
-    if (movieName[0].innerHTML.toLowerCase().indexOf(search) !== -1) {
-      movieName[i].style.display = "flex"
+function filter() {
+  let search = document.getElementById("searchValue").value.toLowerCase();
+  let cards = document.getElementsByClassName("card");
+
+  for (let i = 0; i < cards.length; i++) {
+    if (cards[i].getElementsByClassName('movieName')[0].innerText.toLowerCase().indexOf(search) !== -1) {
+      cards[i].style.display = "grid"
     } else {
-      movieName[i].style.display = "none"
+      cards[i].style.display = "none"
     }
   }
 }
-filter()
 
 function getId(id) {
   alert("이 영화의 id는 " + id + "입니다.")
 }
 
+searchForm.addEventListener('submit', (e) => {
+  e.preventDefault()
+  filter();
+}
+)

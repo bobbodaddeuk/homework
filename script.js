@@ -35,18 +35,21 @@ function card() {
 card()
 
   function filter() {
-  let search = document.getElementById("search").value.toLowercase();
-  let listInner = document.getElementsByClassName("listInner");
+  let search = document.getElementById("searchValue").Value.toLowerCase();
+  let movieName = document.getElementsByClassName("movieName");
 
-  for (let i = 0; i < listInner.length; i++) {
-    title = listInner[i].getElementsByClassName('title');
-    if (title[0].innerHTML.toLowercase().indexOf(search) !== -1) {
-      listInner[i].style.display = "flex"
+  for (let i = 0; i < movieName.length; i++) {
+    movieName = movieName[i].getElementsByClassName('movieName'); 
+    if (movieName[0].innerHTML.toLowerCase().indexOf(search) !== -1) {
+      movieName[i].style.display = "flex"
     } else {
-      listInner[i].style.display = "none"
+      movieName[i].style.display = "none"
     }
   }
 }
+filter()
+
 function getId(id) {
   alert("이 영화의 id는 " + id + "입니다.")
 }
+

@@ -1,91 +1,89 @@
-@import url('https://fonts.googleapis.com/css2?family=Gaegu&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Gaegu&display=swap");
 
 body {
-    background-color: black;
-    font-family: 'Gaegu', sans-serif;
+  background-color: black;
+  font-family: "Gaegu", sans-serif;
 }
 
 header {
-    font-size: 80px;
-    display: flex;
-    justify-content: center;
-    color: white;
-    padding-top: 150px;
-    position: relative;
-    top: 100px;
+  font-size: 80px;
+  display: flex;
+  justify-content: center;
+  color: white;
+  padding-top: 150px;
+  position: relative;
+  top: 100px;
 }
 
 .search {
-    font-size: 20px;
-    display: flex;
-    justify-content: center;
-    border-radius: 5px;
-    position: relative;
-    left: 130px;
-    bottom: 37px;
-    height: 38px;
-
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+  border-radius: 5px;
+  position: relative;
+  left: 130px;
+  bottom: 37px;
+  height: 38px;
 }
 
 .card {
-    width: 300px;
-    margin: 10px;
-    border-radius: 7px;
-    background-color: #f4f4f4;
-    color: #313131;
-    justify-self: center;
-    cursor: pointer;
+  width: 300px;
+  margin: 10px;
+  border-radius: 7px;
+  background-color: #f4f4f4;
+  color: #313131;
+  justify-self: center;
+  cursor: pointer;
 }
 
 .cards {
-    display: grid;
-    grid-template-columns: repeat(3, minmax(400px, auto));
-    justify-content: center;
-    margin-left: 350px;
-    margin-right: 350px;
-    background-color: white;
-    background-size: auto;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(400px, auto));
+  justify-content: center;
+  margin-left: 350px;
+  margin-right: 350px;
+  background-color: white;
+  background-size: auto;
 }
 
 .movieImg {
-    width: 100%;
-    border-radius: 7px 7px 0px 0px;
+  width: 100%;
+  border-radius: 7px 7px 0px 0px;
 }
 
 .voteAverage {
-    margin-left: 10px;
-    margin-right: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
 }
 
 .movieSum {
-    margin-left: 10px;
-    margin-right: 10px;
+  margin: auto 10px auto 10px;
 }
 
 .movieName {
-    margin-left: 10px;
-    margin-right: 10px;
-    font-size: 20px;
+  margin-left: 10px;
+  margin-right: 10px;
+  font-size: 20px;
 }
 
 .image {
-    width: 200px;
-    height: 150px;
-    position: relative;
-    bottom: 250px;
-    border-radius: 5px;
+  width: 200px;
+  height: 150px;
+  position: relative;
+  bottom: 250px;
+  border-radius: 5px;
 }
 
 .text {
-    position: relative;
-    right: 30px;
-    height: 30px;
-    width: 250px;
+  position: relative;
+  right: 30px;
+  height: 30px;
+  width: 250px;
 }
 
 .form {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }

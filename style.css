@@ -27,7 +27,7 @@ header {
 }
 
 .card {
-  width: 300px;
+  width: 320px;
   margin: 10px;
   border-radius: 7px;
   background-color: #f4f4f4;
@@ -54,16 +54,19 @@ header {
 .voteAverage {
   margin-left: 10px;
   margin-right: 10px;
+  padding: 10px;
 }
 
 .movieSum {
   margin: auto 10px auto 10px;
+  padding: 10px;
 }
 
 .movieName {
   margin-left: 10px;
   margin-right: 10px;
   font-size: 20px;
+  padding: 10px;
 }
 
 .image {

@@ -21,7 +21,7 @@ function card() {
         let posterPath = a["poster_path"];
         let voteAverage = a["vote_average"];
         let temp_html = `
-        <div class='card' onclick="getId(${id})">
+        <div class='card' onclick='alert("이 영화의 id는 " + ${id} + "입니다.")'>
             <img class='movieImg' src="https://image.tmdb.org/t/p/w500${posterPath}" alt="${title} Poster">
             <p class='movieName'> < <b>${title}</b> ></p>
             <p class='movieSum'>${overView}</p>
@@ -52,10 +52,6 @@ function filter() {
   if (searchResults === 0) {
     alert("검색 결과가 없습니다.");
   }
-}
-
-function getId(id) {
-  alert("이 영화의 id는 " + id + "입니다.");
 }
 
 searchForm.addEventListener("submit", (e) => {

@@ -1,8 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Gaegu&display=swap');
 
-
-
-
 body {
     background-color: black;
     font-family: 'Gaegu', sans-serif;
@@ -29,6 +26,7 @@ header {
     height: 38px;
 
 }
+
 .card {
     width: 300px;
     margin: 10px;
@@ -58,10 +56,12 @@ header {
     margin-left: 10px;
     margin-right: 10px;
 }
+
 .movieSum {
     margin-left: 10px;
     margin-right: 10px;
 }
+
 .movieName {
     margin-left: 10px;
     margin-right: 10px;

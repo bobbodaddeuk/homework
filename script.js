@@ -1,4 +1,3 @@
-
 const options = {
   method: 'GET',
   headers: {
@@ -6,7 +5,9 @@ const options = {
     Authorization: 'Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiJlYjlhMmI2MjBiNjMwYjViM2RmYWEyMzBhNDIzODFiMCIsInN1YiI6IjY1OTNjZGE0Y2U0ZGRjNmU2NDdkZGIyOSIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.4CSbF2T53qjlLENtBlffmhp-YxvcN7oE5otcgSdDpHc'
   }
 };
+
 let url = 'https://api.themoviedb.org/3/movie/top_rated?language=en-US&page=1';
+
 function card() {
   fetch(url, options)
     .then(response => response.json())
@@ -33,7 +34,6 @@ function card() {
     .catch(err => console.error(err));
 }
 card()
-
 
 function filter() {
   let search = document.getElementById("searchValue").value.toLowerCase();

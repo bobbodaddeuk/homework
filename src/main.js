@@ -29,9 +29,9 @@ function repeatCard() {
 repeatCard();
 
 function filter() {
-  const search = document.getElementById("searchValue").value.toLowerCase();
-  const cards = document.getElementsByClassName("card");
-  const searchResults = 0;
+  let search = document.getElementById("searchValue").value.toLowerCase();
+  let cards = document.getElementsByClassName("card");
+  let searchResults = 0;
 
   for (let i = 0; i < cards.length; i++) {
     if (cards[i].getElementsByClassName("movieName")[0].innerText.toLowerCase().indexOf(search) !== -1) {

@@ -21,13 +21,13 @@ function card() {
         let posterPath = a["poster_path"];
         let voteAverage = a["vote_average"];
         let temp_html = `
-        <div class='card' onclick='alert("이 영화의 id는 " + ${id} + "입니다.")'>
-            <img class='movieImg' src="https://image.tmdb.org/t/p/w500${posterPath}" alt="${title} Poster">
-            <p class='movieName'> < <b>${title}</b> ></p>
-            <p class='movieSum'>${overView}</p>
-            <p class='voteAverage'>평점 : <b>${voteAverage}</b></p>
-        </div>
-        `;
+          <div class='card' onclick='alert("이 영화의 id는 " + ${id} + "입니다.")'>
+              <img class='movieImg' src="https://image.tmdb.org/t/p/w500${posterPath}" alt="${title} Poster">
+              <p class='movieName'> < <b>${title}</b> ></p>
+              <p class='movieSum'>${overView}</p>
+              <p class='voteAverage'>평점 : <b>${voteAverage}</b></p>
+          </div>
+          `;
         let element = document.getElementById("names-q1");
         element.innerHTML += temp_html;
       });
